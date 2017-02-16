@@ -91,7 +91,7 @@ class App extends Component {
                         return <PlayerChip key={player.name} player={player.name} onClick={this.removePlayer}/>
                     }, this)}
                 </p>
-                <button onClick={this.randomise}>Randomise</button>
+                <button onClick={this.randomise} disabled={this.state.players.length < 2}>Randomise</button>
             </div>
         )
     }
