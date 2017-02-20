@@ -1,0 +1,18 @@
+span.playerChip {
+	background-color: #ddd;
+	border-radius: 30px;
+	display: inline-block;
+	margin-right: 10px;
+	padding: 10px 10px 10px 15px;
+}
+
+span.playerChip button {
+	background-color: #bbb;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 30px;
+	margin-left: 6px;
+	padding: 6px;
+	width: 30px;
+}
