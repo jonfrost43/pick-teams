@@ -82,14 +82,14 @@ class App extends Component {
             <div>
                 <PlayerForm onSubmit={this.addPlayer} />
                 <p className="players">
-                    {this.state.players.filter(player => player.team === 0).map(function(player){
+                    {this.state.players.filter(player => player.team === 0).map(player => {
                         return <PlayerChip key={player.name} player={player.name} onClick={this.removePlayer}/>
-                    }, this)}
+                    })}
                 </p>
                 <p className="players">
-                    {this.state.players.filter(player => player.team === 1).map(function(player){
+                    {this.state.players.filter(player => player.team === 1).map(player => {
                         return <PlayerChip key={player.name} player={player.name} onClick={this.removePlayer}/>
-                    }, this)}
+                    })}
                 </p>
                 <button onClick={this.randomise} disabled={this.state.players.length < 2}>Randomise</button>
             </div>
