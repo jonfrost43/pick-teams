@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 //import logo from './logo.svg';
 import './App.css';
-import PlayerChip from './PlayerChip';
-import PlayerForm from './PlayerForm';
+import PlayerChip from './components/PlayerChip/PlayerChip';
+import PlayerForm from './components/PlayerForm/PlayerForm';
 
 // class App extends Component {
 //   render() {
