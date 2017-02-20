@@ -11,8 +11,7 @@ span.playerChip button {
 	border: none;
 	border-radius: 50%;
 	cursor: pointer;
-	height: 30px;
+	height: 24px;
 	margin-left: 6px;
-	padding: 6px;
-	width: 30px;
+	width: 24px;
 }

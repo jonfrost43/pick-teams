@@ -77,17 +77,21 @@ class App extends Component {
         });
     }
 
+    playersByTeam(teamId){
+        return this.state.players.filter(player => player.team === teamId);
+    }
+
     render(){
         return (
             <div>
                 <PlayerForm onSubmit={this.addPlayer} />
                 <p className="players">
-                    {this.state.players.filter(player => player.team === 0).map(player => {
+                    {this.playersByTeam(0).map(player => {
                         return <PlayerChip key={player.name} player={player.name} onClick={this.removePlayer}/>
                     })}
                 </p>
                 <p className="players">
-                    {this.state.players.filter(player => player.team === 1).map(player => {
+                    {this.playersByTeam(1).map(player => {
                         return <PlayerChip key={player.name} player={player.name} onClick={this.removePlayer}/>
                     })}
                 </p>
