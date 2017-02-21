@@ -1,0 +1,62 @@
+div.pitch {
+    height: 100vh;
+    width: 71vh; /* 100/71 = 1.4084 */
+    background: green;
+    max-width: 100vw;
+    max-height: 140.84vw; /* 100/71 = 1.4084 */
+    margin: auto;
+    position: absolute;
+    top:0;bottom:0; /* vertical center */
+    left:0;right:0; /* horizontal center */
+}
+
+div.pitch div.touchline {
+	border: 4px solid #7fc07f;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+
+div.pitch div.halfwayline {
+	border: 2px solid #7fc07f;
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+}
+
+div.pitch div.box6 {
+	border: 4px solid #7fc07f;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 35%;
+	width: 30%;
+	height: 8%;
+}
+
+div.pitch div.box6.away, div.pitch div.box18.away {
+	top: auto;
+	bottom: 0;
+}
+
+div.pitch div.box18 {
+	border: 4px solid #7fc07f;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 20%;
+	width: 60%;
+	height: 20%;
+}
+
+div.pitch div.players {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+div.pitch div.players.away {
+	top: 50%;
+}

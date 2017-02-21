@@ -2,7 +2,7 @@ span.playerChip {
 	background-color: #ddd;
 	border-radius: 30px;
 	display: inline-block;
-	margin-right: 10px;
+	margin: 0 10px 10px 0;
 	padding: 10px 10px 10px 15px;
 }
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 //import logo from './logo.svg';
 import './App.css';
+import Pitch from './components/Pitch/Pitch';
 import PlayerChip from './components/PlayerChip/PlayerChip';
 import PlayerForm from './components/PlayerForm/PlayerForm';
 
@@ -84,22 +85,23 @@ class App extends Component {
     render(){
         return (
             <div>
-                <PlayerForm onSubmit={this.addPlayer} />
-                <p className="players">
+                <Pitch>
+                    <div className="players home">
                     {this.playersByTeam(0).map(player => {
                         return <PlayerChip key={player.name} player={player.name} onClick={this.removePlayer}/>
                     })}
-                </p>
-                <p className="players">
+                    </div>
+                    <div className="players away">
                     {this.playersByTeam(1).map(player => {
                         return <PlayerChip key={player.name} player={player.name} onClick={this.removePlayer}/>
                     })}
-                </p>
+                    </div>
+                </Pitch>
+                <PlayerForm onSubmit={this.addPlayer} />
                 <button onClick={this.randomise} disabled={this.state.players.length < 2}>Randomise</button>
             </div>
         )
     }
 }
-
 
 export default App;
