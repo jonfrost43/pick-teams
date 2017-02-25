@@ -34,17 +34,13 @@ class App extends Component {
         this.state = {
             players: players
         }
-
-        this.addPlayer = this.addPlayer.bind(this);
-        this.removePlayer = this.removePlayer.bind(this);
-        this.randomise = this.randomise.bind(this);
     }
 
     componentDidUpdate(){
         localStorage.setItem('plunkrPickTeams', JSON.stringify(this.state.players));
     }
 
-    addPlayer(playerName){
+    addPlayer = (playerName) => {
         let teamA = this.state.players.filter(player => player.team === 0),
             teamB = this.state.players.filter(player => player.team === 1),
             teamId = teamA.length <= teamB.length ? 0 : 1;
@@ -56,7 +52,7 @@ class App extends Component {
         }
     }
 
-    removePlayer(event){
+    removePlayer = (event) => {
         let playerName = event.target.dataset.player;
 
         if(playerName){
@@ -66,7 +62,7 @@ class App extends Component {
         }
     }
 
-    randomise(){
+    randomise = () =>   {
         let teamValues = this.state.players.map(player => player.team);
         let randomisedTeamValues = _.shuffle(teamValues);
 

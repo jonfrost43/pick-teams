@@ -1,22 +1,15 @@
 import React, { Component } from 'react';
 
 class PlayerForm extends Component {
-    constructor(){
-        super();
+    state = {
+        value: ''
+    };
 
-        this.state = {
-            value: ''
-        };
-
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    handleChange(event){
+    handleChange = (event) => {
         this.setState({value: event.target.value})
     }
 
-    handleSubmit(event){
+    handleSubmit = (event) => {
         event.preventDefault();
         let playerName = event.target[0].value;
 
