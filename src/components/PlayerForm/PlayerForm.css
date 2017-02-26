@@ -1,0 +1,14 @@
+form.add {
+	background-color: #333;
+	padding: 14px;
+}
+
+form.add input[type=text] {
+	border: none;
+	background-color: transparent;
+	color: #fff;
+	display: block;
+	font-size: 1.8em;
+	margin: auto;
+	width: 71vh;
+}

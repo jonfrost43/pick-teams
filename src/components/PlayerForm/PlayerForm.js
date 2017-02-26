@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './PlayerForm.css';
 
 class PlayerForm extends Component {
     state = {
@@ -21,7 +22,7 @@ class PlayerForm extends Component {
 
     render(){
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} className="add">
                 <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Add new player" />
             </form>
         )

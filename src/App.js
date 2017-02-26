@@ -81,6 +81,7 @@ class App extends Component {
     render(){
         return (
             <div>
+                <PlayerForm onSubmit={this.addPlayer} />
                 <Pitch>
                     <div className="players home">
                     {this.playersByTeam(0).map(player => {
@@ -93,7 +94,6 @@ class App extends Component {
                     })}
                     </div>
                 </Pitch>
-                <PlayerForm onSubmit={this.addPlayer} />
                 <button onClick={this.randomise} disabled={this.state.players.length < 2}>Randomise</button>
             </div>
         )

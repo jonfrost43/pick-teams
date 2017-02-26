@@ -3,6 +3,7 @@ import './Pitch.css';
 
 var Pitch = (props) => {
 	return (
+		<div className="pitchContainer">
 		<div className="pitch">
 			<div className="touchline"></div>
 			<div className="halfwayline"></div>
@@ -11,6 +12,7 @@ var Pitch = (props) => {
 			<div className="box18 away"></div>
 			<div className="box6 away"></div>
 			{props.children}
+		</div>
 		</div>
 	)
 };
