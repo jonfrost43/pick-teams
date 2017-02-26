@@ -1,14 +1,17 @@
 form.add {
-	background-color: #333;
+	background-color: #222;
 	padding: 14px;
 }
 
 form.add input[type=text] {
 	border: none;
+	border-bottom: 1px solid #555;
 	background-color: transparent;
 	color: #fff;
 	display: block;
 	font-size: 1.8em;
 	margin: auto;
-	width: 71vh;
+	padding: 6px;
+	width: 68vw;
+	max-width: 400px;
 }
