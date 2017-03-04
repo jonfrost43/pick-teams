@@ -2,9 +2,9 @@ span.playerChip {
 	background-color: #ddd;
 	border-radius: 30px;
 	display: inline-block;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	margin: 0 10px 10px 0;
-	padding: 10px 10px 10px 15px;
+	padding: 8px 8px 8px 12px;
 }
 
 span.playerChip button {
@@ -13,7 +13,7 @@ span.playerChip button {
 	border: none;
 	border-radius: 50%;
 	cursor: pointer;
-	height: 24px;
+	height: 20px;
 	margin-left: 6px;
-	width: 24px;
+	width: 20px;
 }
