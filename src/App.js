@@ -6,6 +6,8 @@ import Pitch from './components/Pitch/Pitch';
 import PlayerChip from './components/PlayerChip/PlayerChip';
 import PlayerForm from './components/PlayerForm/PlayerForm';
 
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
 // class App extends Component {
 //   render() {
 //     return (
@@ -84,14 +86,18 @@ class App extends Component {
                 <PlayerForm onSubmit={this.addPlayer} />
                 <Pitch>
                     <div className="players home">
-                    {this.playersByTeam(0).map(player => {
-                        return <PlayerChip key={player.name} player={player.name} onClick={this.removePlayer}/>
-                    })}
+                        <ReactCSSTransitionGroup transitionName="fade" transitionEnterTimeout={400} transitionLeaveTimeout={400}>
+                            {this.playersByTeam(0).map(player => {
+                                return <PlayerChip key={player.name} player={player.name} onClick={this.removePlayer}/>
+                            })}
+                        </ReactCSSTransitionGroup>
                     </div>
                     <div className="players away">
-                    {this.playersByTeam(1).map(player => {
-                        return <PlayerChip key={player.name} player={player.name} onClick={this.removePlayer}/>
-                    })}
+                        <ReactCSSTransitionGroup transitionName="fade" transitionEnterTimeout={400} transitionLeaveTimeout={400}>
+                            {this.playersByTeam(1).map(player => {
+                                return <PlayerChip key={player.name} player={player.name} onClick={this.removePlayer}/>
+                            })}
+                        </ReactCSSTransitionGroup>
                     </div>
                 </Pitch>
                 <button onClick={this.randomise} disabled={this.state.players.length < 2}>Randomise</button>
