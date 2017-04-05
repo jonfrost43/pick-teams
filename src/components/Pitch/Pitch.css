@@ -5,7 +5,7 @@ div.pitchContainer {
 div.pitch {
     height: 100vh;
     width: 71vh; /* 100/71 = 1.4084 */
-    background: #0b6b0b;
+    background: #108e48;
     max-width: 100vw;
     max-height: 140.84vw; /* 100/71 = 1.4084 */
     margin: auto;
@@ -34,22 +34,26 @@ div.pitch div.box6 {
 	border: 4px solid #7fc07f;
 	box-sizing: border-box;
 	position: absolute;
-	top: 0;
 	left: 35%;
 	width: 30%;
 	height: 8%;
 }
 
+div.pitch div.box6.home, div.pitch div.box18.home {
+	border-top: none;
+	top: 4px;
+}
+
 div.pitch div.box6.away, div.pitch div.box18.away {
+	border-bottom: none;
 	top: auto;
-	bottom: 0;
+	bottom: 4px;
 }
 
 div.pitch div.box18 {
 	border: 4px solid #7fc07f;
 	box-sizing: border-box;
 	position: absolute;
-	top: 0;
 	left: 20%;
 	width: 60%;
 	height: 20%;
@@ -64,4 +68,12 @@ div.pitch div.players {
 
 div.pitch div.players.away {
 	top: 50%;
+}
+
+div.pitch div.touchline,
+div.pitch div.halfwayline,
+div.pitch div.box6,
+div.pitch div.box18 {
+    border-color: #fff;
+	opacity: 0.6;
 }
