@@ -5,6 +5,7 @@ span.playerChip {
 	font-size: 1.2em;
 	margin: 0 10px 10px 0;
 	padding: 8px 8px 8px 12px;
+	position: relative;
 }
 
 span.playerChip button {
@@ -20,10 +21,12 @@ span.playerChip button {
 
 .fade-enter {
 	opacity: 0.01;
+	top: 20px;
 }
 
 .fade-enter.fade-enter-active {
 	opacity: 1;
+	top: 0px;
 	transition: 400ms;
 }
 
