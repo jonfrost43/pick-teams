@@ -64,6 +64,9 @@ div.pitch div.players {
 	top: 0;
 	left: 0;
     padding: 10px;
+	width: 100%;
+	height: 50%;
+	box-sizing: border-box;
 }
 
 div.pitch div.players.away {

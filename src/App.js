@@ -81,6 +81,9 @@ class App extends Component {
     }
 
     render(){
+        let teamA = this.playersByTeam(0),
+            teamB = this.playersByTeam(1);
+
         return (
             <div>
                 <div id="controls">
@@ -88,16 +91,16 @@ class App extends Component {
                     <button id="randomise" onClick={this.randomise} disabled={this.state.players.length < 2}>Randomise</button>
                 </div>
                 <Pitch>
-                    <div className="players home">
-                        <ReactCSSTransitionGroup transitionName="fade" transitionEnterTimeout={400} transitionLeaveTimeout={400}>
-                            {this.playersByTeam(0).map(player => {
+                    <div className={'players home teamCount'+teamA.length}>
+                        <ReactCSSTransitionGroup component="div" transitionName="fade" transitionEnterTimeout={400} transitionLeaveTimeout={400}>
+                            {teamA.map(player => {
                                 return <PlayerChip key={player.name} player={player.name} onClick={this.removePlayer}/>
                             })}
                         </ReactCSSTransitionGroup>
                     </div>
-                    <div className="players away">
-                        <ReactCSSTransitionGroup transitionName="fade" transitionEnterTimeout={400} transitionLeaveTimeout={400}>
-                            {this.playersByTeam(1).map(player => {
+                    <div className={'players away teamCount'+teamB.length}>
+                        <ReactCSSTransitionGroup component="div" transitionName="fade" transitionEnterTimeout={400} transitionLeaveTimeout={400}>
+                            {teamB.map(player => {
                                 return <PlayerChip key={player.name} player={player.name} onClick={this.removePlayer}/>
                             })}
                         </ReactCSSTransitionGroup>
