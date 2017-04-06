@@ -83,7 +83,10 @@ class App extends Component {
     render(){
         return (
             <div>
-                <PlayerForm onSubmit={this.addPlayer} />
+                <div id="controls">
+                    <PlayerForm onSubmit={this.addPlayer} />
+                    <button id="randomise" onClick={this.randomise} disabled={this.state.players.length < 2}>Randomise</button>
+                </div>
                 <Pitch>
                     <div className="players home">
                         <ReactCSSTransitionGroup transitionName="fade" transitionEnterTimeout={400} transitionLeaveTimeout={400}>
@@ -100,7 +103,6 @@ class App extends Component {
                         </ReactCSSTransitionGroup>
                     </div>
                 </Pitch>
-                <button onClick={this.randomise} disabled={this.state.players.length < 2}>Randomise</button>
             </div>
         )
     }

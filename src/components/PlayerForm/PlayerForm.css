@@ -1,9 +1,10 @@
-form.add {
+form#add {
 	background-color: #222;
 	padding: 14px;
+	float: left;
 }
 
-form.add input[type=text] {
+form#add input[type=text] {
 	border: none;
 	border-bottom: 1px solid #555;
 	background-color: transparent;
@@ -12,6 +13,26 @@ form.add input[type=text] {
 	font-size: 1.8em;
 	margin: auto;
 	padding: 6px;
-	width: 68vw;
-	max-width: 400px;
+}
+
+#controls {
+	width: 71vh;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+button#randomise {
+	display: inline-block;
+	float: right;
+	margin: 14px;
+	background: none;
+	color: #999;
+	border: 1px solid #999;
+	padding: 8px 10px;
+	cursor: pointer;
+}
+
+button#randomise:hover, button#randomise:active {
+	color: #fff;
+	border: 1px solid #fff;
 }
