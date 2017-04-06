@@ -16,7 +16,7 @@ form#add input[type=text] {
 }
 
 #controls {
-	width: 71vh;
+	width: 64vh;
 	margin: 0 auto;
 	overflow: hidden;
 }
