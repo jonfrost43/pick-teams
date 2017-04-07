@@ -6,6 +6,7 @@ span.playerChip {
 	padding: 8px 8px 8px 12px;
 	margin: 0 10px 10px 0;
 	position: relative;
+	transition: 400ms
 }
 
 span.playerChip button {
@@ -47,20 +48,26 @@ span.playerChip button {
 .home.teamCount3 .playerChip:nth-child(1) { top: 20%; left: 44%; }
 .home.teamCount3 .playerChip:nth-child(2) { top: 50%; left: 20%; }
 .home.teamCount3 .playerChip:nth-child(3) { top: 50%; right: 20%; }
+.home.teamCount3 .playerChip:nth-child(4) { top: 70%; left: 44%; }
+.home.teamCount3 .playerChip:nth-child(5) { top: 70%; right: 20%; }
 
 .away.teamCount3 .playerChip:nth-child(1) { bottom: 20%; left: 42%; }
 .away.teamCount3 .playerChip:nth-child(2) { bottom: 50%; left: 20%; }
 .away.teamCount3 .playerChip:nth-child(3) { bottom: 50%; right: 20%; }
+.away.teamCount3 .playerChip:nth-child(4) { bottom: 70%; left: 42%; }
+.away.teamCount3 .playerChip:nth-child(5) { bottom: 70%; right: 20%; }
 
 .home.teamCount4 .playerChip:nth-child(1) { top: 20%; left: 44%; }
 .home.teamCount4 .playerChip:nth-child(2) { top: 45%; left: 20%; }
 .home.teamCount4 .playerChip:nth-child(3) { top: 45%; right: 20%; }
 .home.teamCount4 .playerChip:nth-child(4) { top: 70%; left: 44%; }
+.home.teamCount4 .playerChip:nth-child(5) { top: 70%; right: 20%; }
 
 .away.teamCount4 .playerChip:nth-child(1) { bottom: 20%; left: 42%; }
 .away.teamCount4 .playerChip:nth-child(2) { bottom: 45%; left: 20%; }
 .away.teamCount4 .playerChip:nth-child(3) { bottom: 45%; right: 20%; }
 .away.teamCount4 .playerChip:nth-child(4) { bottom: 70%; left: 42%; }
+.away.teamCount4 .playerChip:nth-child(5) { bottom: 70%; right: 20%; }
 
 .home.teamCount5 .playerChip:nth-child(1) { top: 20%; left: 44%; }
 .home.teamCount5 .playerChip:nth-child(2) { top: 45%; left: 12%; }
