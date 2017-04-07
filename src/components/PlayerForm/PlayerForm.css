@@ -1,7 +1,18 @@
+#controls {
+	width: 64vh;
+	min-width: 320px;
+	max-width: 94vw;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
 form#add {
 	background-color: #222;
+	box-sizing: border-box;
 	padding: 14px;
 	float: left;
+	width: 60%;
+	width: calc(100% - 140px);
 }
 
 form#add input[type=text] {
@@ -11,18 +22,13 @@ form#add input[type=text] {
 	color: #fff;
 	display: block;
 	font-size: 1.8em;
-	margin: auto;
 	padding: 6px;
-}
-
-#controls {
-	width: 64vh;
-	margin: 0 auto;
-	overflow: hidden;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 button#randomise {
-	display: inline-block;
+	display: block;
 	float: right;
 	margin: 14px;
 	background: none;
