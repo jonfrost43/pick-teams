@@ -93,15 +93,15 @@ class App extends Component {
                 <Pitch>
                     <div className={'players home teamCount'+teamA.length}>
                         <ReactCSSTransitionGroup component="div" transitionName="fade" transitionEnterTimeout={400} transitionLeaveTimeout={400}>
-                            {teamA.map(player => {
-                                return <PlayerChip key={player.name} player={player.name} onClick={this.removePlayer}/>
+                            {teamA.map((player, i) => {
+                                return <PlayerChip key={player.name} index={i} player={player.name} onClick={this.removePlayer}/>
                             })}
                         </ReactCSSTransitionGroup>
                     </div>
                     <div className={'players away teamCount'+teamB.length}>
                         <ReactCSSTransitionGroup component="div" transitionName="fade" transitionEnterTimeout={400} transitionLeaveTimeout={400}>
-                            {teamB.map(player => {
-                                return <PlayerChip key={player.name} player={player.name} onClick={this.removePlayer}/>
+                            {teamB.map((player, i) => {
+                                return <PlayerChip key={player.name} index={i} player={player.name} onClick={this.removePlayer}/>
                             })}
                         </ReactCSSTransitionGroup>
                     </div>

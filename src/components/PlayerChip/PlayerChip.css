@@ -1,15 +1,19 @@
-span.playerChip {
-	background-color: #ddd;
-	border-radius: 30px;
+.playerChip {
 	display: inline-block;
-	font-size: 1.2em;
-	padding: 8px 8px 8px 12px;
 	margin: 0 10px 10px 0;
 	position: relative;
 	transition: 400ms
 }
 
-span.playerChip button {
+.playerChip > span {
+	background-color: #ddd;
+	border-radius: 30px;
+	display: inline-block;
+	font-size: 1.2em;
+	padding: 8px 8px 8px 12px;
+}
+
+.playerChip > span > button {
 	background-color: #aaa;
 	color: #ddd;
 	border: none;
@@ -40,43 +44,60 @@ span.playerChip button {
 
 .teamCount3 .playerChip,
 .teamCount4 .playerChip,
-.teamCount5 .playerChip {
+.teamCount5 .playerChip,
+.teamCount6 .playerChip {
+	display: block;
 	position: absolute;
-	margin: 0;
+	margin: 0 auto;
+	text-align: center;
 }
 
-.home.teamCount3 .playerChip:nth-child(1) { top: 20%; left: 44%; }
-.home.teamCount3 .playerChip:nth-child(2) { top: 50%; left: 20%; }
-.home.teamCount3 .playerChip:nth-child(3) { top: 50%; right: 20%; }
-.home.teamCount3 .playerChip:nth-child(4) { top: 70%; left: 44%; }
-.home.teamCount3 .playerChip:nth-child(5) { top: 70%; right: 20%; }
+.home.teamCount3 .playerChip.pos1 { top: 25%; left: 0%; right: 0%; }
+.home.teamCount3 .playerChip.pos2 { top: 65%; left: 0%; right: 50%; }
+.home.teamCount3 .playerChip.pos3 { top: 65%; left: 50%; right: 0%; }
+.home.teamCount3 .playerChip.pos4 { top: 70%; left: 0%; right: 0%; }
 
-.away.teamCount3 .playerChip:nth-child(1) { bottom: 20%; left: 42%; }
-.away.teamCount3 .playerChip:nth-child(2) { bottom: 50%; left: 20%; }
-.away.teamCount3 .playerChip:nth-child(3) { bottom: 50%; right: 20%; }
-.away.teamCount3 .playerChip:nth-child(4) { bottom: 70%; left: 42%; }
-.away.teamCount3 .playerChip:nth-child(5) { bottom: 70%; right: 20%; }
+.away.teamCount3 .playerChip.pos1 { bottom: 25%; left: 0%; right: 0%; }
+.away.teamCount3 .playerChip.pos2 { bottom: 65%; left: 0%; right: 50%; }
+.away.teamCount3 .playerChip.pos3 { bottom: 65%; left: 50%; right: 0%; }
+.away.teamCount3 .playerChip.pos4 { bottom: 70%; left: 0%; right: 0%; }
 
-.home.teamCount4 .playerChip:nth-child(1) { top: 20%; left: 44%; }
-.home.teamCount4 .playerChip:nth-child(2) { top: 45%; left: 20%; }
-.home.teamCount4 .playerChip:nth-child(3) { top: 45%; right: 20%; }
-.home.teamCount4 .playerChip:nth-child(4) { top: 70%; left: 44%; }
-.home.teamCount4 .playerChip:nth-child(5) { top: 70%; right: 20%; }
+.home.teamCount4 .playerChip.pos1 { top: 20%; left: 0%; right: 0%; }
+.home.teamCount4 .playerChip.pos2 { top: 45%; left: 0%; right: 50%; }
+.home.teamCount4 .playerChip.pos3 { top: 45%; left: 50%; right: 0%; }
+.home.teamCount4 .playerChip.pos4 { top: 70%; left: 0%; right: 0%; }
+.home.teamCount4 .playerChip.pos5 { top: 70%; left: 50%; right: 0%; }
 
-.away.teamCount4 .playerChip:nth-child(1) { bottom: 20%; left: 42%; }
-.away.teamCount4 .playerChip:nth-child(2) { bottom: 45%; left: 20%; }
-.away.teamCount4 .playerChip:nth-child(3) { bottom: 45%; right: 20%; }
-.away.teamCount4 .playerChip:nth-child(4) { bottom: 70%; left: 42%; }
-.away.teamCount4 .playerChip:nth-child(5) { bottom: 70%; right: 20%; }
+.away.teamCount4 .playerChip.pos1 { bottom: 20%; left: 0%; right: 0%; }
+.away.teamCount4 .playerChip.pos2 { bottom: 45%; left: 0%; right: 50%; }
+.away.teamCount4 .playerChip.pos3 { bottom: 45%; left: 50%; right: 0%; }
+.away.teamCount4 .playerChip.pos4 { bottom: 70%; left: 0%; right: 0%; }
+.away.teamCount4 .playerChip.pos5 { bottom: 70%; left: 50%; right: 0%; }
 
-.home.teamCount5 .playerChip:nth-child(1) { top: 20%; left: 44%; }
-.home.teamCount5 .playerChip:nth-child(2) { top: 45%; left: 12%; }
-.home.teamCount5 .playerChip:nth-child(3) { top: 45%; right: 12%; }
-.home.teamCount5 .playerChip:nth-child(4) { top: 70%; left: 20%; }
-.home.teamCount5 .playerChip:nth-child(5) { top: 70%; right: 20%; }
+.home.teamCount5 .playerChip.pos1 { top: 20%; left: 0%; right: 0%; }
+.home.teamCount5 .playerChip.pos2 { top: 45%; left: 0%; right: 50%; }
+.home.teamCount5 .playerChip.pos3 { top: 45%; left: 50%; right: 0%; }
+.home.teamCount5 .playerChip.pos4 { top: 70%; left: 0%; right: 50%; }
+.home.teamCount5 .playerChip.pos5 { top: 70%; left: 50%; right: 0%; }
+.home.teamCount5 .playerChip.pos6 { top: 70%; left: 50%; right: 0%; }
 
-.away.teamCount5 .playerChip:nth-child(1) { bottom: 20%; left: 42%; }
-.away.teamCount5 .playerChip:nth-child(2) { bottom: 45%; left: 12%; }
-.away.teamCount5 .playerChip:nth-child(3) { bottom: 45%; right: 12%; }
-.away.teamCount5 .playerChip:nth-child(4) { bottom: 70%; left: 20%; }
-.away.teamCount5 .playerChip:nth-child(5) { bottom: 70%; right: 20%; }
+.away.teamCount5 .playerChip.pos1 { bottom: 20%; left: 0%; right: 0%; }
+.away.teamCount5 .playerChip.pos2 { bottom: 45%; left: 0%; right: 50%; }
+.away.teamCount5 .playerChip.pos3 { bottom: 45%; left: 50%; right: 0%; }
+.away.teamCount5 .playerChip.pos4 { bottom: 70%; left: 0%; right: 50%; }
+.away.teamCount5 .playerChip.pos5 { bottom: 70%; left: 50%; right: 0%; }
+.away.teamCount5 .playerChip.pos6 { bottom: 70%; left: 50%; right: 0%; }
+
+.home.teamCount6 .playerChip.pos1 { top: 20%; left: 0%; right: 0%; }
+.home.teamCount6 .playerChip.pos2 { top: 45%; left: 0%; right: 66%; }
+.home.teamCount6 .playerChip.pos3 { top: 45%; left: 33%; right: 33%; }
+.home.teamCount6 .playerChip.pos4 { top: 45%; left: 66%; right: 0%; }
+.home.teamCount6 .playerChip.pos5 { top: 70%; left: 0%; right: 50%; }
+.home.teamCount6 .playerChip.pos6 { top: 70%; left: 50%; right: 0%; }
+
+.away.teamCount6 .playerChip.pos1 { bottom: 20%; left: 0%; right: 0%; }
+.away.teamCount6 .playerChip.pos2 { bottom: 45%; left: 0%; right: 66%; }
+.away.teamCount6 .playerChip.pos3 { bottom: 45%; left: 33%; right: 33%; }
+.away.teamCount6 .playerChip.pos4 { bottom: 45%; left: 66%; right: 0%; }
+.away.teamCount6 .playerChip.pos5 { bottom: 70%; left: 0%; right: 50%; }
+.away.teamCount6 .playerChip.pos6 { bottom: 70%; left: 50%; right: 0%; }
