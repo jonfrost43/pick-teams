@@ -27,7 +27,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 class App extends Component {
     constructor(){
         super();
-        let localState = localStorage.getItem('plunkrPickTeams');
+        let localState = localStorage.getItem('pickTeams');
         let players = [];
         if(localState){
             players = JSON.parse(localState);
@@ -39,15 +39,16 @@ class App extends Component {
     }
 
     componentDidUpdate(){
-        localStorage.setItem('plunkrPickTeams', JSON.stringify(this.state.players));
+        localStorage.setItem('pickTeams', JSON.stringify(this.state.players));
     }
 
     addPlayer = (playerName) => {
         let teamA = this.state.players.filter(player => player.team === 0),
             teamB = this.state.players.filter(player => player.team === 1),
-            teamId = teamA.length <= teamB.length ? 0 : 1;
+            teamId = teamA.length <= teamB.length ? 0 : 1,
+            playerNames = this.state.players.map(player => player.name);
 
-        if(playerName && this.state.players.indexOf(playerName) === -1){
+        if(playerName && playerNames.indexOf(playerName) === -1){
             this.setState({
                 players: this.state.players.concat({name: playerName, team: teamId})
             })
