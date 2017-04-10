@@ -52,6 +52,9 @@
 	transition: 400ms;
 }
 
+.teamCount0 .playerChip,
+.teamCount1 .playerChip,
+.teamCount2 .playerChip,
 .teamCount3 .playerChip,
 .teamCount4 .playerChip,
 .teamCount5 .playerChip,
@@ -61,6 +64,24 @@
 	margin: 0 auto;
 	text-align: center;
 }
+
+.home.teamCount0 .playerChip.pos1 { top: 45%; left: 0%; right: 0%; }
+
+.home.teamCount1 .playerChip.pos1 { top: 45%; left: 0%; right: 0%; }
+.home.teamCount1 .playerChip.pos2 { top: 65%; left: 0%; right: 0%; }
+
+.away.teamCount0 .playerChip.pos1 { bottom: 45%; left: 0%; right: 0%; }
+
+.away.teamCount1 .playerChip.pos1 { bottom: 45%; left: 0%; right: 0%; }
+.away.teamCount1 .playerChip.pos2 { bottom: 65%; left: 0%; right: 0%; }
+
+.home.teamCount2 .playerChip.pos1 { top: 25%; left: 0%; right: 0%; }
+.home.teamCount2 .playerChip.pos2 { top: 65%; left: 0%; right: 0%; }
+.home.teamCount2 .playerChip.pos3 { top: 65%; left: 50%; right: 0%; }
+
+.away.teamCount2 .playerChip.pos1 { bottom: 25%; left: 0%; right: 0%; }
+.away.teamCount2 .playerChip.pos2 { bottom: 65%; left: 0%; right: 0%; }
+.away.teamCount2 .playerChip.pos3 { bottom: 65%; left: 50%; right: 0%; }
 
 .home.teamCount3 .playerChip.pos1 { top: 25%; left: 0%; right: 0%; }
 .home.teamCount3 .playerChip.pos2 { top: 65%; left: 0%; right: 50%; }
