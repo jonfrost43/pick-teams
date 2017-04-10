@@ -4,7 +4,7 @@ import './Pitch.css';
 var Pitch = (props) => {
 	return (
 		<div className="pitchContainer">
-			<div className="pitch aspect-ratio">
+			<div className="pitch">
 				<div className="touchline"></div>
 				<div className="halfwayline"></div>
 				<div className="box18 home"></div>
