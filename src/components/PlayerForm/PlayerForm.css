@@ -25,6 +25,7 @@ form#add input[type=text] {
 	padding: 6px;
 	width: 100%;
 	box-sizing: border-box;
+	text-transform: capitalize;
 }
 
 button#randomise {
