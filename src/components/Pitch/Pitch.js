@@ -7,6 +7,7 @@ var Pitch = (props) => {
 			<div className="pitch">
 				<div className="touchline"></div>
 				<div className="halfwayline"></div>
+				<div className="centreCircle"></div>
 				<div className="box18 home"></div>
 				<div className="box6 home"></div>
 				<div className="box18 away"></div>
