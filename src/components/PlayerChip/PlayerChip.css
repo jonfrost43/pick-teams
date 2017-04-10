@@ -16,7 +16,7 @@
 
 .away .playerChip > span {
 	background-color: #333;
-	color: #fff;
+	color: #ddd;
 }
 
 .playerChip > span > button {
