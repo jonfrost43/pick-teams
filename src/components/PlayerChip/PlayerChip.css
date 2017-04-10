@@ -14,8 +14,13 @@
 	text-transform: capitalize;
 }
 
+.away .playerChip > span {
+	background-color: #333;
+	color: #fff;
+}
+
 .playerChip > span > button {
-	background-color: #aaa;
+	background-color: #9f9f9f;
 	color: #ddd;
 	border: none;
 	border-radius: 50%;
@@ -23,6 +28,10 @@
 	height: 20px;
 	margin-left: 6px;
 	width: 20px;
+}
+
+.away .playerChip > span > button {
+	color: #333;
 }
 
 .fade-enter {
