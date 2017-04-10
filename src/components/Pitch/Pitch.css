@@ -3,11 +3,13 @@ div.pitchContainer {
 }
 
 div.pitch {
-    height: 90vh;
-    width: 64vh; /* 100/71 = 1.4084 */
     background: #108e48;
+    width: 64vh; /* 100/71 = 1.4084 */
+    height: 90vh;
     max-width: 94vw;
     max-height: 132vw; /* 100/71 = 1.4084 */
+    min-width: 320px;
+    min-height: 450px;
     margin: auto;
     position: absolute;
     top:0;bottom:auto; /* vertical center */
