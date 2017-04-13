@@ -23,7 +23,7 @@ class PlayerForm extends Component {
     render(){
         return (
             <form onSubmit={this.handleSubmit} id="add">
-                <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Add new player" maxLength="30" />
+                <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Add player" maxLength="30" />
             </form>
         )
     }

@@ -89,7 +89,7 @@ class App extends Component {
             <div>
                 <div id="controls">
                     <PlayerForm onSubmit={this.addPlayer} />
-                    <button id="randomise" onClick={this.randomise} disabled={this.state.players.length < 2}>Randomise</button>
+                    <button id="randomise" onClick={this.randomise} disabled={this.state.players.length < 2}>Pick Teams</button>
                 </div>
                 <Pitch>
                     <div className={'players home teamCount'+teamA.length}>

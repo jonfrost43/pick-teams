@@ -10,7 +10,7 @@ form#add {
 	background-color: #222;
 	box-sizing: border-box;
 	padding: 14px;
-	float: left;
+	float: right;
 	width: 60%;
 	width: calc(100% - 140px);
 }
@@ -30,16 +30,12 @@ form#add input[type=text] {
 
 button#randomise {
 	display: block;
-	float: right;
+	float: left;
 	margin: 14px;
 	background: none;
-	color: #999;
-	border: 1px solid #999;
+	color: #eee;
+	border: 1px solid #eee;
 	padding: 8px 10px;
 	cursor: pointer;
-}
-
-button#randomise:hover, button#randomise:active {
-	color: #fff;
-	border: 1px solid #fff;
+	text-transform: uppercase;
 }
